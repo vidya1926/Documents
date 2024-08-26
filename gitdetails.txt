@@ -1,0 +1,4 @@
+QeagleCodebase
+CodeBase@1
+
+git clone https://<QeagleCodebase>:<token>@github.com/QeagleCodebase/ExpertusOne.git
