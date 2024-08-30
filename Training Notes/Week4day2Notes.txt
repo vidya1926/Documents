@@ -1,0 +1,52 @@
+Week4day2
+==========
+WebTable 
+Actions class
+ScreenShot 
+Wait
+
+
+WebTable
+========
+
+<table>====>holds the table name
+ <tbody>-table body
+
+ <th>--->table header
+   <tr>=-------->table row
+         <td>------>table column
+    
+Structure
+=======
+<table>
+<tbody>
+ <tr>
+     <th>
+</tr>
+<tr>
+  <td></td>
+ <td></td>
+</tr>
+
+1. Navigate to erail.in
+Clear the field
+2. Enter From station as TPJ
+clear the field
+3. Enter To Station as MS
+4. Uncheck Sort on Date Checkbox
+5. Get all Train Names and check the Train names have chennai
+
+======================================================
+
+Actions class
+****************
+Mouse Actions
+rightclick
+doubleclick
+
+
+Wait
+Implicitwait->applicalble to all findElement and findElements
+
+ExplicityWait
+working based on condition to a particular element

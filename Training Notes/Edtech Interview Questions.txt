@@ -1,0 +1,49 @@
+1. Where we use interface and abstract class in real time.
+2. What happens when concrete class extends abstract class what will it tell us to do
+3. What happens when have multiple catch with first one with Exception and second catch with NoSuchElementException
+4. When should we use throw & throws
+5. how our project automation frameworks implemented
+
+
+
+1.	What is JDK? Difference between JDK, JRE.
+2.	What is Collections in JAVA? Why are they used? List down few and their uses. 
+3.	What are the different modifiers and specifiers? 
+4.	What do you mean by polymorphism? What is the differences between Method overloading and method overriding.
+5.	Find the element in given array. What is the searching technique you have used now? Can you solve the above program in faster way? Need to explain binary searching algorithm.
+6.	What is spring? What have you done in previous project using this? Explain the basic architecture of the previous project and intro to all modules.
+7.	Have you used Selenium before? How to select, click any element, absolute and relative xpath. 
+
+
+1.	What is the difference between Array and ArrayList.
+2.	What is HashMap? Explain about it.
+3.	What is heap and stack memory in JAVA
+4.	Is String mutable? Difference between String,  String Builder, String Buffer.
+5.	What are the new features introduces in Java 8? What is the current version of JDK.
+6.	Explain the concept of lambda functions, Generics.
+7.	Why do we use package in Java
+8.	What is constructor? What are the uses of this and super keyword
+9.	What is the return type of constructor
+10.	Why do we use static methods and variables.
+11.	Differences between final, finally, finalize
+12.	Differences between throw and throws keyword
+13.	Difference between extends and implements
+14.	Is multiple inheritance possible in Java? Justify
+15.	Can we override the static methods.
+16.	What is abstract class? Difference between abstract class and Interface
+17.	Difference between aggregation and compositions
+18.	What is thread in Java. How to create one
+19.	What is runtime polymorphism
+20.	How do you handle exception in Java. How to catch multiple exception, create your custom exceptions. 
+21.	What is the difference between equals() and == operator. 
+22.	Difference between list and Set, HashMap and TreeMap, Set and Map, Comparable and Comparator, ArrayList and LinkedList
+23.	Why do we use property file in Java
+24.	What is Singleton Pattern and Do you know how to make it Thread-Safe and Fast?
+25.	How Garbage collection work in Java.
+
+
+1.	Write a function to find out longest palindrome in a given string?
+2.	In an array 1-100 exactly one number is duplicate how do you find it
+3.	Generate Fibonacci series using recursion and for loop
+4.	Demonstrate explicit wait conditions, all links from Gmail, switch to previous tab
+5.	Demonstrate hashmap in Java

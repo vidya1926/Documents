@@ -1,0 +1,38 @@
+TestNg-Unit Testing FrameWork
+========================
+1..Seq and parallel
+2.Categorizing the testcase
+3.Report Generating
+4.Static and Dynamic Parametrization
+5.Assertion
+6.Listeners/rerun failed testcase
+7.Verbose--log in the Console
+8.Injecting the dependencies
+9.To execute Multiple test cases under one suite
+9.Cross browser testing
+10.Annotations and Attributes
+
+@BeforeSuite
+@BeforeTest-->testdata 
+@BeforeClass
+  @DataProvider--dynamic data-->test data
+@BeforeMethod
+@Test
+@AfterMethod
+@AfterClass
+@AfterTest
+@AfterSuite
+@Parameter-->static data-->browser, url,credentials
+<parameter>
+
+
+Attribute--@Test
+invocationCount
+invocationTimeout
+priority
+dependsOnMethods/groups
+alwaysRun
+enabled
+groups
+timeout
+

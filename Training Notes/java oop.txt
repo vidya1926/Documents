@@ -1,0 +1,150 @@
+1.In order to restrict a variable of a class from inheriting to subclass, how variable should be declared?
+
+a) Protected
+b) Private (A)
+c) Public
+d) Static
+
+2.Static members are not inherited to subclass.
+
+a) True
+b) False (A)
+
+3.Which of the following is used for implementing inheritance through an interface?
+
+a) inherited
+b) using
+c) extends
+d) implements (A)
+
+4. class A 
+    {
+        int i;
+        void display() 
+        {
+            System.out.println(i);
+        }
+    }    
+    class B extends A 
+    {
+        int j;
+        void display() 
+        {
+            System.out.println(j);
+        }
+    }    
+    class inheritance_demo 
+    {
+        public static void main(String args[])
+        {
+            B obj = new B();
+            obj.i=1;
+            obj.j=2;   
+            obj.display();     
+        }
+   }
+
+a) 0
+b) 1
+c) 2  (A)
+d) Compilation Error
+
+5.Method overriding is combination of inheritance and polymorphism?
+a) True (A)
+b) false
+
+6.When Overloading does not occur?
+
+a) More than one method with same name but different method signature and different number or type of parameters
+b) More than one method with same name, same signature but different number of signature
+c) More than one method with same name, same signature, same number of parameters but different type
+d) More than one method with same name, same number of parameters and type but different signature (A)
+
+
+7.Compile time polymorphism parameters will be?
+a)same
+b)unique
+c)different (A)
+d)none
+
+8.Multiple Inheritance in java at class level is not allowed due to 
+a)Memory insufficient 
+b)Ambiguity problem (A)
+c)compiler problem 
+d)none
+
+9.An Abstract Method does not have a body.
+A. True (A)
+B. False 
+
+10.Which is true about interface
+a) Provides 100% abstraction
+b. interface allows to instantiate the class (A)
+c. Has only unimplemented method
+d. All are true
+
+11.Which is known as dynamicPolymorphism ?
+
+A. Compile Time 
+B. Run Time (A)
+C. Both A & B
+D. None of the above
+
+12.Which Feature of OOP illustrated the code reusability?
+A. Polymorphism
+B. Encapsulation
+C. Inheritance (A)
+D. Abstraction
+
+13Which of these packages contain all the collection classes?
+
+a) java.lang
+b) java.util(A)
+c) java.net
+d) java.awt
+
+14.What is the method to get the size of the List?
+a).size()
+b).getSize()
+c).getOptions() 
+d).getAttribute()
+
+15.How to remove duplicates from List?
+a) HashSet<String> listToSet = new HashSet<String>(duplicateList);  (A)
+b) HashSet<String> listToSet = duplicateList.toSet();
+c) HashSet<String> listToSet = Collections.convertToSet(duplicateList);
+d) HashSet<String> listToSet = duplicateList.getSet();
+
+16.Which of these collection class has the ability to grow dynamically?
+
+a.Array
+b.Arrays
+c.ArrayList(A)
+d.(None of these)
+
+17.Set cannot accessed be through 
+a)Index 
+b)List 
+c)name 
+d)id
+
+18.HashSet maintains 
+ a)Random order
+ b)Insertion order
+ c)Ascii order 
+d)none of the above
+
+19. Which is the correct way to inherit and implement the interface?
+Consider and example, Interface is IAnimal and a class is Cat that wants to implement interface.
+
+1. class Cat implements IAnimal{} (A)
+2. class Cat extends IAnimal{}
+3. class Cat import IAnimal{}
+4. None is correct
+
+20.Which one is correct declaration for implementing two interfaces?
+Consider, Interface A and B.  class C wants to implements both interfaces.
+
+1. class C implements A, B (A)
+2. class C implements A, implements B
+3. class C implements A extends B

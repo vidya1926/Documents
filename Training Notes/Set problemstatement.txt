@@ -1,0 +1,38 @@
+Set 
+1.Write  a program to reverse the even positioned words in the given string.
+
+Explanation: Find the even positioned words from the given string and reverse it and print 
+Example:1
+Input: I am a Software Tester
+Output: I ma a erawtfoS Tester
+
+Example:2
+Input: Learning Selenium Automation
+Output: Learning muineleS Automation
+
+
+2.Write a program to remove the duplicate characters from the given string using set
+
+Explanation:Remove the duplicated characters from the given string and print only the unique characters(include the first occurence
+Example:1
+Input: amazon
+Output: [a,m,z,o,n]
+
+Example:2
+Input: Testleaf
+Output: [T,s,t,l,a,f]
+
+
+
+3.Write a program to remove the duplicate words from the given string using set
+
+Explanation: Remove the duplicated words from the given string and print only the unique words(include the first occurence)
+Hint: Strings are case sensitive
+
+Example:1
+Input: test your java skills with given java snippets
+Output: [test,your,java,skills,with,given,snippets]
+
+Example:2
+Input: We learn selenium in live Selenium session 
+Output: [We,learn,selenium,in,live,Selenium,session ]

@@ -1,0 +1,88 @@
+
+Agenda:
+=======
+
+Introduction to Apache POI
+How to read Excel file
+Integrating the Excel file with Testcase
+
+
+Selenium->doesnot support the desktop appln
+
+Apachi Poi-->java library (API)
+  -->support to connect or integrate with office application -->Excel,Word,ppt..
+  
+  Add dependency -->pom.xml
+  ==============================
+  <dependency>
+    <groupId>org.apache.poi</groupId>
+    <artifactId>poi-ooxml</artifactId>
+    <version>5.2.2</version>
+</dependency>
+
+<!-- https://mvnrepository.com/artifact/org.apache.poi/poi -->
+<dependency>
+    <groupId>org.apache.poi</groupId>
+    <artifactId>poi</artifactId>
+    <version>5.2.2</version>
+</dependency>
+
+Classroom:
+=========
+
+Create an Excel file  ->3 datas (3rows and 2 columns)
+Copy the Excel file into project
+Read the data of 2row and 1column
+
+Step to Read Excel Data:
+========================
+//Step:1-->Created the excel sheet
+//Step:2 -->Copy the Excel file into the Project under folder
+//Step:3--->Set the path to read the required excel file
+//Step:4-->Read the required sheet form the workbook
+//Step:5 Get into the row
+//Step:6 Get into the Column
+//Step:7 Read the Value
+	
+	
+
+Classroom:2
+=========	
+Create a Excel file with 3 columns and 4 rows as
+companyName	firstName lastName
+Copy the Excel file into project
+Read the data of all rows and column values
+
+Static keyword
+-->no need any reference to call the method /variable
+
+
+To integrate the excel with testcase
+===================================
+
+Step:1 Create a string[][] data in excel file with the size of row and column count
+Step:2 Assigned the exceldata(stringCellValue) to the data[][]
+Step:3 Returned the data to the method and added the return type to the readexcel class method
+
+In Testcase
+Step:4   Called the readexcel method in the testcase and returned the data to the dataprovider method
+
+
+ @BeforeSuite
+	@BeforeTest
+		@BeforeClass
+			@DataProvider
+				@BeforeMethod
+				  @Test
+				  
+				  Push the Dataprovider method to the commonclass/baseclass
+				  create a method in createlead testcase as setfilename and assign the filename 
+				  Pass the argument filename in excel file and also in dataprovider method 
+				   *Declare the filename as public in commonclass/baseclass
+				   
+
+
+
+
+				   
+				   

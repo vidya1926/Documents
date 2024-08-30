@@ -1,0 +1,90 @@
+What will happen when you compile and run the following code?   09
+public class Test{
+public static void main(String[] args) {
+int i = 5, j = 2;
+System.out.println( i % j );
+ } }
+
+
+Will this code run?
+public static void main(String var) { 10
+String str = ''word'';
+System.out.println(str);
+ }
+
+
+public class Test {
+public void main(String[] args) { 13
+int x = 10*20-20;
+System.out.println(x);
+ } }
+
+
+public static void main(String[] args){
+String x = \"abc\";
+String y = \"abc\";
+x.concat(y);
+System.out.print(x);
+ }}
+
+Will this code compile? 
+public class Test{
+static int i = 0; 
+public static void main(String args[]){
+Test t = new Test();
+print(); 
+}
+public void print(){  
+System.out.println(this.i);
+ }
+ }
+
+
+public class Test {
+public static void main(String[] args) {
+char c = 65;
+System.out.println('c = '+c);
+} }
+
+
+What Is The Result Of The Following Java Coding Snippet?
+class TestApp {
+public static void main() {
+int odd = 1;
+if (odd) {
+System.out.println("odd");
+}
+else {
+System.out.println('even');
+}}
+ }
+
+
+
+
+What Would Be The Outcome Of Following Java Coding Snippet?
+class TestApp {
+public static void main(String[] args) {
+for (int index = 0; 1; index++)
+{
+System.out.println('Welcome');
+break;
+}
+}}
+
+
+What Would The Following Java Coding Snippet Display On Execution?
+class TestApp {
+public static void main(String[] args) {
+System.out.println(args[1] + args[2] + args[3]);
+}
+
+
+
+
+
+
+
+
+
+

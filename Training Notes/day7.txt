@@ -1,0 +1,131 @@
+
+TestNg
+======
+plugin
+
+https://testng.org/testng-eclipse-update-site/7.4.0/
+
+dependency
+
+<dependency>
+<groupId>org.testng</groupId>
+			<artifactId>testng</artifactId>
+			<version>7.4.0</version>
+		</dependency>
+=========================================================================================================================
+
+What TestNG?
+===========
+
+-to Execute multiple testcases
+-Junit and Nunit
+https://testng.org/doc/
+
+Why TestNg
+===========
+-sequential and parallel
+-to will provide you the status of your testcase -passed/failed testcase
+-to allowed execute failed testcase
+-Control the execution flow-annotation and attributes
+-gives exceution summary-html report
+-support data driven framework
+-Support cross browser testing
+-retry listener
+-Assertions to verify and validation
+
+Steps to convert standalone testcase into TestNG testcase
+----------------------------------------------------------
+1. Remove static keyword from main method
+2. Remove String[] args argument
+3. Rename main() into meaningful method name
+4. Apply @Test on top of the method
+
+classroom
+https://github.com/TestLeafPages/SelAug2021/blob/main/testcase.zip
+2. Download testcase.zip
+3. Extract the zip file
+4. copy the testcase folder
+5. paste it under scr/main/java
+
+
+Steps to convert standalone testcase into TestNG testcase
+----------------------------------------------------------
+1. Remove static keyword from main method
+2. Remove String[] args argument
+3. Rename main() into meaningful method name
+4. Apply @Test on top of the method
+=====================================================================================================================
+
+Classroom:1
+1. Create testng_seq.xml to execute all the 5 testcases sequentially
+2. Create testng_paralle.xml to execute all the 5 testcases 
+    parallely in 3 browsers (thread-count="3" and parallel="classes" at <test>)
+
+
+============================================================================================================
+
+Test-output folder
+
+After executing-the folder will be available
+report folder
+-index.html
+-emailablereport.html
+
+failedtest.xml->to identify the failed testcase
+
+============================================================================================================
+
+Order of Execution is on Acsii value
+
+Attribute in suite level
+=====================
+Verbose
+threadcount->comes along parallel 
+Annonations
+===========
+beforesuite
+beforetest
+beforeclass
+BeforeMethod
+AfterMethod
+afterclass
+afterTest
+
+=============
+beforesuite-statring the report 
+beforetest-db connection-to retreive the data -input
+beforeclass-rec the report
+BeforeMethod-precondition
+My real tc--tc..written automation script
+AfterMethod
+afterclass
+afterTest
+
+
+Attributes
+===========
+
+Priority
+enabled
+invocationcount
+treadpoolsize
+dependsonMethods
+dependsOnMethods={"createld","deleteLead"} 
+groups
+dependsOnGroups
+
+==============================
+Parametrization
+static parametrization
+       @Parameters
+dynamic parametrization
+       @Dataprovider
+
+
+
+
+
+
+
+
+

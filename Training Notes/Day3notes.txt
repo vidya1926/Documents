@@ -1,0 +1,111 @@
+Variables
+
+
+datatype variableName= value;
+
+Local variables
+
+limited to the block where you have declared
+
+Instance/global variable/class variable
+ can be accessed anywhere in the class with help of reference obj
+
+Static Variable-also be a class variable with a keyword static..
+access the variable using classname 
+
+
+OOPs concepts:
+=============
+
+4 components
+
+Inheritance
+Abstraction 
+PolyMorphism 
+Encapsulation
+
+
+Inheritance
+===========
+
+inheriting the property of parent class ->Is-A Relationship
+Keywords extends
+
+types 
+Single level->Parent-Child
+Multilevel Inheritance->grandparent->parent->child
+Hirercial->parent->child1
+                  ->child2
+                  ->child3
+hybrid->combination of Single and multi-level inheritance
+
+
+
+
+RemoteWebDriver ->parent
+ChromiumDriver->child
+SafariDriver->child
+firefoxDriver->child
+
+
+Multiple is not possible-becoz of diamond problem-ambiquity in calling methods 
+========================================================
+
+Polymorphism
+===========
+Overloading-Static/Compile Time/Early Binding
+
+Same Class-Same Methodname-With differnt Arguments
+
+Select Class
+findElement
+string -Substring
+
+
+Overridding -Dynamic /RunTime Polymorphism/Late Binding
+
+SameMethodName -Same Argument/returntype/-Different Class
+
+quit
+
+=============================================================
+
+
+Abstraction:
+============
+
+-Hiding the internal details
+
+
+Abstraction-0 -to- 100%
+Interface-100%
+
+
+Abstraction
+=======
+Contains- implemented and unimplemented methods
+concerete and abstract methods
+
+
+keyword-abstract
+method is created without body
+
+access specifier returntype methodname();
+
+Interface
+============
+100% abstraction
+Keyword -implements
+it supports multiple inhertance
+
+RBI
+framing the rules
+
+private and public banks has to follow the rules
+
+Class extends Class
+Interace extends Interface
+
+Example in selenium
+WebElement->interface 
+

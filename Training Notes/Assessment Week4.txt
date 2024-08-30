@@ -1,0 +1,30 @@
+
+Testcase:1   Create New User
+========================
+Test Steps:
+1) Launch the app https://www.salesforce.com/in/
+2) Click Login
+3) Login with the credentials
+4) Click on the App Launcher Icon left to Setup
+5) Click on View All
+6) Click on User Provisioning Request
+7) Click on the open in SalesForce Classic
+8) Click on Create New View
+9) Enter View Name as Snorky[Your name]
+10) Enter View Unique Name as Snorky_26[yourname_anynumber]
+11) Click on My User Provisioning Requests Under Step two
+12) Under Field Select First DropDown as Name
+13) Under Operator Get the List of values availble from dropdown
+14) Get the size of DropDown
+15) Under Field Select First DropDown as Created Date
+16) Under Step 3 Get the List of Available Fields
+17) Under Step 3 Get the List of Selected Fields
+18)  Select an Option From Available Field  and Click Add Option 
+19) Verify whether Field is added to Selected Fields 
+20) Under Step 4  Click on Visible to All Users 
+21) Click on Save
+22) Verify New User is Created
+23) Get the Title of the Page
+24) Close Other Browsers Than Current Browser
+
+

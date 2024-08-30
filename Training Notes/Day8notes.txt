@@ -1,0 +1,143 @@
+
+CrossbrowserTesting:
+====================
+passing parameter as browser in suitelevel with the value of required browser
+included that in the common method in @Parameters("Browser")
+Pass the argument browser to the precondition method
+Declare the driver as RemoteWebDriver.
+Included driver setup using if/switch
+
+Assertion:
+==========
+
+Verification-comparing your actual reqirement with the expected requirement
+
+
+Hard Assert
+  It throws the exception when the condition fails and also stop the execution
+
+
+Soft Assert
+
+It will not any exception any condition fails and continue the other steps
+
+=============================================================================================
+
+Cucumber
+========
+Pre-Requisite
+=================
+
+https://cucumber.github.com/cucumber-eclipse/update-site
+https://cucumber.github.io/cucumber-eclipse-update-site-snapshot/
+http://rlogiacco.github.io/Natural
+
+
+<dependency>
+     <groupId>io.cucumber</groupId>
+     <artifactId>cucumber-testng</artifactId>
+     <version>7.1.0</version>
+</dependency>
+<dependency>
+     <groupId>io.cucumber</groupId>
+     <artifactId>cucumber-java</artifactId>
+     <version>7.1.0</version>
+</dependency>
+==================================
+
+
+Cucumber-A Tool for BDD Framework
+
+
+Behaviuour Driven Development Framework
+
+
+Old =testing stategy waterfall
+
+TDD -Test driven Development framework
+===
+Writing the testcase first and based on the test case  pdt-devlopment
+
+positive result
+
+ATDD- Acceptance test driven development
+===============
+involves the user, non-Technical 
+
+BDD -Behaviour driven development framework
+
+-Mostly stakeholders, Non-technical team-client ,product owner
+
+Bridges the gap between both the technical team and non technical
+
+Gherkin Language-Simple English Language
+
+Keywords
+=========
+Feature-------->Funtionality of the module
+Scenario-------->Positive/Negative
+And--->Conjunction
+Given------->Precondition
+When ------->Test condition
+Then------->Expected result (Positive)
+But--------->Expected Result(negative)
+Background---> Common method
+ScenarioOutline-->passing multiple datas
+Examples
+
+BDD Framework
+=============
+ Jbehave
+ Cucumber
+Jdave
+Fitnesse
+.net->specflow
+===============================
+
+Cucumber
+=======
+ 3 layers
+
+Feature file--->uses the Gherkin Language
+
+StepDefinition->Actual test script
+
+Runner--->Execution
+
+Create 3 packages -features steps runner
+
+In feature Package
+ create a file with extention .feature
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

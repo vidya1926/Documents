@@ -1,0 +1,37 @@
+TestNG-Execution Framework
+--seq and parallel excecution
+--Creating an tesng.xml file to customize
+  parallel =classes
+--Report
+--failed testcases
+--annotations and attributes
+--allow us to use dynamic and static data 
+
+Annotation:
+@BeforeSuite-> report template 
+@BeforeTest->connection
+@BeforeClass->data receive
+@BeforeMethod
+
+@AfterSuite
+
+BeforeSuite
+Before Test
+Before Class
+Before Method
+Method1
+afterMethod
+Before Method
+SecondMethod
+afterMethod
+AfterClass
+AfterTest
+
+Attributes:
+=======
+priority
+invocation count
+threadpool size
+timeout
+dependsOn-methods/groups
+alwaysRun

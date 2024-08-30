@@ -1,0 +1,122 @@
+Selenium Webdriver
+=====================
+Selenium
+Jason Huggings
+Early 2000
+Selenium Core- Selenium RC and Ide
+2004
+Selenium Webdriver-Simon Stewart-java
+
+2006-Selenium Webdriver-java
+
+Mercury --QTP,Test Complete..
+
+
+Selenium Suite
+
+4components
+
+Selenium IDE--Record and Play tool
+Selenium RC-using Remote Server 
+Selenium Webdriver---
+Selenium Grid-Run in Multiple Machines->Hub and Node
+
+
+Selenium WebDriver ---OpenSource Tool-Simon Stewart
+
+
+Supports
+ -All Programming Languages
+-All OS/Windows
+-All types of browsers
+-Works With API Call internally
+
+
+--Maven Project
+--dependencies-selenium software-> POM-Project Object Model
+-browser
+
+HTML Structure-DOM (Document Object Model)
+
+<! DOCTYPE html> ->refers the type of document
+<html>
+<body>->includes the actual content of the web page
+ <h1>My First Heading</h1>-> refers the headings in the page
+ <p>My first paragraph.</p>->refers the paragraphs in the page
+  </body>
+</html>
+The element with in <> (angular braces) are called as tag name. Some of the tag names are
+<> </>=>represents the start and end of the content
+<div> => divides the content of the page
+<input>=> refers the input control like textbox
+<span>=> refers to the sections in the page
+<a>=> refers the hyperlink in the page
+<img>=>refers the image file
+<iframe>=>refers the HTML document inside the HTML Document
+<label> refers the label for the input tag content.
+
+
+The elements in brown refer the attribute(class) of the given tag name(input) and the blue text(inputLogin) refers the value of the attribute. The black color text(Password) refers the actual text name of the label field. Some of the Attributes of HTML are id, class, name, for, type, value, for, text. 
+
+
+Selenium 
+To locate the Element in the DOM 
+Selenium interacts with the webElements using locators which are attribute and its value in the dom
+
+8 Locators("")
+
+id
+name
+classname
+Tagname
+linktext
+cssSelector
+xpath
+
+
+Syntax for 
+driver.findElement(By.locator("value"));
+
+
+Locators	WebDriver	When do you use?	  When you cannot use?
+Id	        id	            Always (Most preferred)	Numbers
+Name	       name	          If “id” does not exist	Duplicate
+Link	       linkText	          If it is a link	        Duplicate
+Tag name	tagName  	For collection of objects	Duplicate
+Class name	className	When class is unique w/o spaces	 White spaces, Duplicate
+Xpath	         xpath	        If none of the above, works	          Xpath can change
+Style sheet	cssSelector	This is the last option you have!	CSS can change
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

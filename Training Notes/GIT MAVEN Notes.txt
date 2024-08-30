@@ -1,0 +1,168 @@
+Today's Agenda:
+
+-Maven 
+- Git
+
+=======
+Maven- Project Management Tool
+
+Build Automation Tool
+
+--Package your code
+
+--Dependency management
+
+--Easy to integrate with other CICD
+
+
+==========
+Maven->from java Community -Works based on pom.xml
+
+
+Maven -holds 2 repositories
+
+remote repository
+   https://repo1.maven.org
+
+local repository -.m2 folder
+
+
+=====================
+
+Packaging the code--to convert the source code into jar..
+
+Build Life cycle:
+
+Compile-identify the erros in the source code
+
+test-test your code
+
+package-convert to jar
+
+install-store to your local repo
+
+
+<!-- <build>
+		<pluginManagement>
+			<plugins>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-compiler-plugin</artifactId>
+					<version>3.8.0</version>
+					<configuration>
+						<source>1.8</source>
+						<target>1.8</target>
+					</configuration>
+				</plugin>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-surefire-plugin</artifactId>
+					<version>3.0.0-M3</version>
+					<configuration>
+						<suiteXmlFiles>
+							<suiteXmlFile>testng.xml</suiteXmlFile>
+						</suiteXmlFiles>
+					</configuration>
+				</plugin>
+			</plugins>
+		</pluginManagement>
+	</build>
+	 -->
+
+from command prompt to execute normal jar file
+mvn compile
+mvn test
+mvn package
+mvn install
+
+*********************************************************************************************************************
+
+To create Executable jar file
+
+two steps
+-add maven-assembly plugin
+--runtime tesng.xml code
+=====================================================
+
+<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-assembly-plugin</artifactId>
+				<version>3.1.1</version>
+				<configuration>
+					<descriptorRefs>
+						<descriptorRef>jar-with-dependencies</descriptorRef>
+					</descriptorRefs>
+					<archive>
+						<manifest>
+							<mainClass>com.leafBot.testcases.ExecuteableTestng</mainClass>
+						</manifest>
+					</archive>
+				</configuration>
+				<executions>
+					<execution>
+						<phase>package</phase>
+						<goals>
+							<goal>single</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+	</build>
+
+
+
+
+=======================
+
+GIT--It is a distributed version control software
+
+GitHub-source code management system
+
+--remote repository -store your source code securely for future use/ in a remote server
+--to collaborate with the team.
+
+In a team 0f 5
+
+5 local repositories --1 remote repo
+To collaborate with team memebers
+
+1.In github -->repository --settings--collaborators-->add People(use username of the teammember) -->accept the invitation(Teammember)
+
+
+How to push the code to github
+
+1.Create local git repo
+2.commit the project to local repo 
+3.from local repo push the project to the remote repo
+
+
+
+Url:https://qeagle-dev-ed.my.salesforce.com/
+UserName:hari.radhakrishnan@qeagle.com
+Password:Password@123
+
+Create New Opportunity	
+1. Login to https://login.salesforce.com
+2. Click on toggle menu button from the left corner
+3. Click view All and click Sales from App Launcher
+4. Click on Opportunity tab 
+5. Click on New button
+6. Enter Opportunity name as 'Salesforce Automation by *Your Name*,Get the text and Store it 
+7. Choose close date as Today
+8. Select 'Stage' as Need Analysis
+9. click Save and VerifyOppurtunity Name"
+
+Create Accounts
+1. Login to https://login.salesforce.com
+2. Click on toggle menu button from the left corner
+3. Click view All and click Sales from App Launcher
+4. Click on Accounts tab 
+5. Click on New button
+6. Enter 'your name' as account name
+7. Select Ownership as Public   
+8. Click save and verify Account name "
+
+

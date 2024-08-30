@@ -1,0 +1,244 @@
+ 
+ Which of these is long data type literal?
+a) 20L
+b) ABCDEFG
+c) 032456f
+d) 99671246
+
+
+Which is correct to declare the string variable?
+String str='abc';
+String str="abc"; (A)
+string str= "abc";
+String str =abc;
+
+
+Which of these values can a boolean variable contain?
+
+a) True & False (A)
+b) 0 & 1
+c) Any integer value
+d) true
+
+ Which one is a valid declaration of a boolean?
+a) boolean b1 = 1;
+b) boolean b2 = ‘false’;
+c) boolean b3 = false;  (A)
+d) boolean b4 = ‘true’
+
+
+Which of these statements are incorrect?
+a) Assignment operators are more efficiently implemented by Java run-time system than their equivalent long forms
+b) Assignment operators run faster than their equivalent long forms
+c) Assignment operators can be used only with numeric and character data type
+d) None of the above (A)
+
+
+Which of the following is NOT the Selection Control Structure?
+
+if
+if else
+For
+Switch
+
+In conditional statements, which can only test for equality,  
+A) If
+B) Switch (A)
+C) While
+D) If
+
+In conditional Statement, Which can evaluate any type of Boolean expression.
+
+A)  Switch
+B)  If (A)
+C)  While
+D)  For
+
+Which statement at the end of each block signals the end of a particular case and causes an exit from the switch statement, transferring the control to the statement following the switch.
+A) switch
+B) break (A)
+C) continue
+D) default
+
+
+When if statements are nested, the last else gets associated with the nearest if without an else.
+
+True 
+False
+
+=========================================================
+Assessments
+==========
+
+1. With x = 0, which of the following are lines of Java code for changing the value of x to 1?
+   1. x++;
+   2. x = x + 1;
+   3. x += 1;
+   4. x =+ 1;
+
+a) 1, 2 & 3
+b) 1 & 4
+c)  3&2
+d)  All are applicable(A)
+
+2.What will be the output of the following Java program?
+
+    class increment 
+    {
+        public static void main(String args[]) 
+        {        
+             int g = 3;
+             System.out.print(++g * 8);
+        } 
+    }
+a) 25
+b) 24
+c) 32  (A)
+d) 33
+
+
+3. Which of these keywords is used to make a class?
+a) class (A)
+b) struct
+c) int
+d) none of the mentioned
+
+4. Which of the following is a valid declaration of an object of class Box?
+a) Box obj = new Box();  (A)
+b) Box obj = new Box;
+c) obj = new Box();
+d) None of the above
+
+5.Which of the following statement(s) are true for java?
+
+1. JVM is responsible to converting Byte code to the machine specific code.
+2. We only need JRE to run java programs.
+3. JDK is required to compile java programs.
+4.  All are true (A)
+
+6.public class Test {
+public void main(String[] args) {
+int x = 10*20-20;
+System.out.println(x);
+}
+}
+
+1. Program can't be run (A)
+2. Prints 0
+3. Prints 180
+4. Compile time error.
+
+
+7.public class Test {
+public static void main(String[] args) {
+char c = 65;
+System.out.println("c = "+c);
+}
+}
+
+1. Compile Time Error
+2. Prints "c = A"   (A)
+3. Runtime Error
+4. Prints "c = 65"
+
+8.If a result of a depends on two conditions then which operator should be used?
+1. ++
+2. ||
+3. !=
+4. && (A)
+
+9.All the Java keywords can be in Upper and Lowercase
+
+1. True
+2.False  (A)
+
+
+10.Will this code run?
+
+public static void main(String var)
+ {
+String str = "word";
+System.out.println(str);
+}
+
+1. Yes
+2. No  (A)
+
+11.
+What will happen when you compile and run the following code?
+public class Test{
+public static void main(String[] args) {
+int i = 5, j = 2;
+System.out.println( i % j );
+}
+}
+
+1. 2
+2. 1
+3. Compilation error
+4. RunTime Error
+
+12.  What will be the output
+Public class Statement 
+    {
+        public static void main(String args[])
+        {
+            int var1 = 5; 
+            int var2 = 6;
+            if ((var2 = 1) == var1)
+                System.out.println(var2);
+            else 
+                System.out.println(++var2);
+        } 
+    }
+
+a) 1
+b) 2 (A)
+c) 3
+d) 4
+
+
+13.  What is the return type of a method that does not return any value?
+a) int
+b) float
+c) void   (A)
+d) double
+
+
+14. Which of these access specifiers must be used for main() method?
+a) private
+b) public  (A)
+c) protected
+d) none of the mentioned
+
+
+15.Which of the following statements are incorrect?
+a) public members of class can be accessed by any code in the program
+b) private members of class can only be accessed by other members of the class
+c) private members of class can be inherited by a subclass, and become protected members in subclass  (A)
+d) protected members of a class can be inherited by a subclass, and become private members of the subclass
+
+
+16. What is true about a break?
+a) Break stops the execution of entire program
+b) Break halts the execution and forces the control out of the loop  (A)
+c) Break forces the control out of the loop and starts the execution of next iteration
+d) Break halts the execution of the loop for certain time frame
+
+17.Which of the following is used with the switch statement?
+a) Continue
+b) Exit
+c) break (A)
+
+18. Which of the following is not a valid jump statement?
+a) break
+b) goto (b)
+c) continue
+d) return
+
+
+19.From where break statement causes an exit?
+a) Only from innermost loop
+b) Terminates a program
+c) Only from innermost switch
+d) From innermost loops or switches (A)

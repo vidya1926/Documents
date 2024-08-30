@@ -1,0 +1,135 @@
+
+Map
+---
+
+
+Super Keyword
+===============
+Inheritance concept
+
+--to call the parent class methods, variable or parent class constructor
+
+this Keyword
+=============
+-reference to the current class Object
+
+Constructor
+==========
+
+-to initialize your object
+-has the name as the class name
+-internally jvm when create your object for class
+
+
+default constructor
+Parmetrized Constructor-Passing arguments to the constructor
+Constructor Chaining-Calling One constructor from other Constructor
+
+
+===========================================================================================================================
+
+Selenium Webdriver
+Locators-8
+Dropdowns
+xpath/Advanced Xpath
+
+FindElements->returns list of elements from the Webpage
+
+
+
+TargetLocators
+==============
+
+Alert
+Frame
+WindowHandling
+
+
+
+Alert
+
+======
+Selenium deals with Web application
+
+NoSuchElement =>due to page load or incorrect xpath/if the element hidden inside
+StaleElementReference -element is not attached to the page
+adding Wait statement.
+
+
+Pop up message from the web application
+Alert can be inspected
+
+
+Types
+Modal Alert-Cannot be inspected
+=============
+1.Simple Alert-only one option -which you are going to accept
+2.Confirmation Alert-ok/cancel->your decision
+3.Prompt alert- asking you type something->to accept or dismiss
+
+Alert
+
+void accept()->to accept the dialog box
+void dismss()-To cancel your popup
+getText()-to get message
+sendKeys()-to type into the alert box
+no clear();
+Non-Modal-Can be Inspected-acts like webElement
+
+Exception
+UnHandledAlert Exception
+NoAlertPresent Exception
+ElementClickintercepted
+===================================================================================
+Frames
+======
+HTML inside a HTML
+iframe= inlineframe
+switchTo.frame(index)
+frame("id/name")
+frame(Webelement)
+NoSuchFrame Exception
+
+=================================================================
+
+Window Handling
+=============
+unique id for every windows which are opened 
+windowhandle
+
+getWindowHandles();->Return type will be set
+set->list
+driver.switch to required the window
+
+
+
+
+
+
+
+
+
+
+
+Challenges with Selenium
+we cant take snapshot of the alert
+Scrollbar 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

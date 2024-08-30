@@ -1,0 +1,177 @@
+1.Which among the following test double is used to replace a target function with pre programmed method directing to specific path?
+(1)Mocks
+(2)Stub (A)
+(3)Spy
+(4)Dummies
+
+2.Mocks have built in assertions.
+A.True  (A)
+b.False
+
+3.What is the Testdouble that are fake methods with preprogrammed behavior and expectation?
+(1)Mocks (A)
+(2)Stubs
+(3)Dummies
+(4)Fakes
+
+4.Which of the following code that is inserted in runtime in place of real code
+(1)Stub (A)
+(2)Mocks
+(3)Packet
+(4)Jammer
+
+5. In tested systems, Stub provides
+
+(1) High Security (A)
+(2) Mocking
+(3)High Confidence
+(4) High Modularity
+
+6. A buiilder or developer usually executes the tests involving stubs in their
+1.Running environment (A)
+2.Dead environment
+3.Production
+4.Fake
+
+7.An implementation that return the hardcoded value for the purpose of testing  is
+(1)Stub (A)
+(2)Mocks
+(3)Packet
+(4)Jammer
+
+8. The intent of using stubs is to replace complex behaviour to simpler one
+
+1.True (A)
+2.False
+
+9.WireMock is a simulator for
+1.API call (A)
+2. Service Virtualization Tool(A)
+3. Mock Server.(A)
+4.None of the above
+
+10.If WireMock is unable to match the request, it returns
+
+1. 404 (A)
+2. 202
+3. 304
+4. None of the above
+
+
+Quiz:
+====
+
+1.WireMock is to
+
+1.  It is an API call
+2.  Simulate the HTTP connection over API (A)
+3.  Both are True
+4.  Both are false
+
+
+
+2. Which is not a feature of WireMock
+
+1.WireMock allows us to implement a feature which uses an HTTP API that is not ready.
+2.WireMock allows us to write fast and consistent tests.
+3.Tests which use WireMock can guarantee that our application is compatible with the used HTTP APIs.(A)
+4. None of the above
+
+
+3.Stub request can be done with 
+
+1. static givenThat () (A)
+2. stubFor() (A)
+3. ConfigureFor()
+4.NOne of the above
+
+4. Which given return the configured HTTP response
+1. withStatus()
+2.WillReturn(aResponse()) (A)
+3.WillReturn(aStatus());
+4.None of the above
+
+5. Request template will be acheived with 
+
+1.  withQueryParam("searchFor" ,equalTo("testleaf"));  (A)
+2.  givenThat(get(urlEqualTo("/api/message"));
+3. stubFor(get(urlPathMatching("/testleaf/.*")) 
+4. None of the Above
+
+
+6. Way to define themandatory input parameter using swagger
+
+1. parameters: -in: path,required=true (A)
+2. properties: -in:path
+3.parameters: -in: path
+4.required: -in:path
+
+7. Which are the types parameter in swagger
+1.QueryParameter
+2. Path Parameter
+3. FormParameter
+4. Header Parameter
+5.All the above (A)
+
+
+8.stubFor() is to
+
+1. initialize the stub (A)
+2. notifies the stub with HTTP Get request
+3. match with the API URL
+4. to assert the HTTP request
+
+9. Which is not a keyword in header parameter?
+1.Content-Type
+2.Accept
+3.Authentication
+4.Token (A)
+
+10. which method helps to fix priority in stubbing?
+1. setPriority(3)
+2. putPriority(3)
+3. atPriority(3) (A)
+4. cannot set priority
+
+11. Is it possible to use default parameter along with required parameter
+
+1.true
+2.false (A)
+
+12.Which is not a type of TestDouble
+
+1.Mock
+2.Fake
+3.Stub
+4.Jammer(A)
+
+13. Which is not correct with respect to Mocking and Stubbing
+
+1. Mock creates real connection of an external or internal service (A)
+2. Stub is to state verification and Mock is to Behaiour verification of the object
+3. Assertion is possible with Mock object and not on Stub Object
+4. All are correct
+
+
+14.How will your return the Configured HTTP header
+1. withHeader(A)
+2. getHeader
+3. none of the above
+
+15.Is it possible to return multiple configured HTTP headers
+
+1.true (A)
+2.false
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,66 @@
+Cucumber
+=======
+Language ->Gherkin Languauge
+
+Keywords
+Feature
+Scenario
+Given 
+When Then And But
+
+
+Scenario OutLine 
+Examples
+
+
+Background
+-Cannot extend the backgroud for other feature file
+
+Hooks implementation
+To implement the common methods which is not possible with the background
+
+from ruby languauge
+
+@Before-precondition
+@After -post condition
+
+
+Can also use Testng annotation-@Aftermethos and @BeforeMethod
+
+===============================================================
+Tag-Customizing the execution 
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+Classroom:1
+===========
+Classroom:
+1. Implement to get data from feature file
+2. Create One more scenario and move all common steps to Background
+3. Implement one of the scenario with Scenario Outline and Examples
+
+
+Classroom practice:2
+========================
+Create a separate Feature file for all the 5 testcases of leaftaps and implement it
+Implement Scenario Outline  (Wherever Applicable)
+Implement the preconditions and postconditions using Hooks Implementation and extend baseclass for all 5 testcases
+
+Classroom practice:3
+======================
+1. Remove Hooks and move your precondition and postconditio to your baseclass
+2. Extend BAseClass in Runner and AbstractTestNGCucumberTests in Baseclass
+3. Apply @Functional to 1st Scenario, @Smoke to 2nd Scenrario, @Rungressio and @Smoke to 3rd Scenario
+    Execute Smoke and Regression scenarios

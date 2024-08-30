@@ -1,0 +1,233 @@
+Agenda
+======
+
+Introduction to Jenkins
+Basic Freestyle Job -Configuration
+Maven -Git Integration
+Jenkins-Pipeline
+Jenkins
+========
+  --OpenSource tool-->build and test -->Continuous Intergation/continuous deployment
+  --Vast range plugins 
+  --supports multiple environment and also os
+  --Support pipeline
+  --Fast release
+  
+Prerequisites:
+==============
+Java
+Maven
+Git
+Jenkins
+
+
+To Start Jenkins
+================
+Java -jar jenkins. war --httpPort=8081
+
+Goto Chrome http//localhoat:8080
+
+Login with the credentials
+
+================================
+
+Configuration with Maven -Git
+=============================
+
+Create new job
+Goto Global tool Configuration
+set the path
+Maven-->local path from the system
+Jdk -->path
+Git -->path add the credentials of github account
+
+
+Manage Plugin
+=============
+Maven Integration-->installed if not install from Available
+
+Maven Project
+
+ScM-->Git url
+
+Run the job 11: 30 on every thursday
+
+
+
+
+Scheduled Trigger
+==================
+MINUTE HOUR DOM MONTH DOW
+ For every Ten min 
+H/10 * 3 * *
+
+15 5 * * 5
+
+To Schedule remotely
+===================
+Create New Job
+Add the Git repo url
+Build Trigger-->Trigger Remotely
+
+create authentication token
+
+http://localhost:8080/job/JobWithRemoteTrigger/build?token=Auth=vidya@123
+
+Apply and save
+
+
+Postman-->add request
+Post ->http://localhost:8080/job/JobWithRemoteTrigger/build?token=Auth=vidya@123
+
+
+To Add Dependencies
+===================
+Create New Job
+Add the Git repo url/Clone from other project
+Build Trigger-->Build after the other project built
+ 
+
+To Trigger from WebHook->to Auotmatically run the job when there is any update with the project in Github
+=======================
+Setup the Webhook with ipaddress of the jenkins 
+
+To get the ip address for localhost port 
+    Download ngrok
+	Login/signup to the ngrok
+	get the authtoken
+
+	Run in ngrok from commandline
+	add the command 
+	ngrok authtoken tokenvalue
+	ngrok http 8080
+	
+In jenkins add the plugin for webhook
+Create a job 
+under Build  Trigger -->Github hook trigger for GITScm polling-->apply and save
+======================
+Trigger job with parameters
+===========================
+
+Create a job 
+General-->This project  is parametrized
+  ->parameter name
+  -->choices
+  
+  Goto Maven Goal -->add test -Dargument=${value}
+  
+=====================================================
+ 
+ 
+Pipeline--Modern Jenkins
+
+	Dev team-->Unit testing-->Deploy to Qa-->UAT team-->api testing 
+	
+	Groovy language-DSL
+	
+	--Simple and support Complex scenarios
+	->resilent
+	
+	
+Scripted pipeline
+ --->more coding part
+-->developers
+Declarative pipeline
+---->less coding part
+-->Testers
+
+Groovy syntax:
+==============
+pipeline{
+
+
+
+}
+
+
+No semicolons,
+-->block of  code --Sections ,directives,steps...
+
+Sections
+========
+
+agent-
+Which machine needed to run a job
+-environment -->UAT,dev,Test ..
+--pipeline level/stage level
+-passing parameters to refer what environment the job is to run
+  any,docker,lable, node,kubernates....
+options-->set 
+
+Stages-->mandatory -->what kind of evironment
+ -->everypipeline should have atleast 1 Stages
+ 
+    Stage-->it goes under Stages -->allowed only inside the stages
+      actions are wrapped up here-->real work
+	  --->should be have atleast one stage
+	  
+	BlueOcean ->plugin to view the output properly for parallel pipeline execution as a flowchart
+	stage view-->Add plugin 
+      console with based on the indendent stage
+	  
+Post -->configure post build actions like email notification
+Trigger-->to trigger the job at the scheduled time
+
+Real time Scenario:
+===================
+Dev -side
+1.Add the tools
+
+2.Pull the code from the github
+check if the server already running
+
+3. package the file 
+
+Test the application
+Pull the code from the github
+run the job
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Assessment on Jenkins
+Create a Jenkins Job -as Maven Project
+Configure the Job as following
+  -->Parameterize the browser
+  -->Add the public git repo 
+  -->Include dependency on other project
+  -->Schedule the job for every wednesday at 10pm
+  -->Send the email notification to vidyabharathi.ramamchandran@testleaf.com
+  -->Run the job Using Webhook
+  
+Assessment:2
+Create a jenkins pipeline job
+  -->Include 3 stages as 
+     UI Automation
+	 QA Automation 
+	 UAT Automation
+  -->configure QA and UAT as parallel run with scheduled run at 3.30 pm
+  -->Add Post build step to send email(vidyabharathi.ramamchandran@testleaf.com) for success

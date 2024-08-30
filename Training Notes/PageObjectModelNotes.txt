@@ -1,0 +1,189 @@
+POM---Page Object Model
+====
+FrameWork 
+==========
+
+Reuability
+Easy Maintenance
+Organizing our files
+Maintaining the uniformity
+Better productivity
+
+POM- to design 
+to build the framework
+==========================
+Reuability
+Easy Maintenance
+Organizing our files
+Maintaining the uniformity
+Better productivity
+
+Set a rule to develop /design the framework
+============================================
+
+
+1.Create a separate class for common methods
+new package as Base-->preojectSpecific method class
+
+
+2.create separate java classes for each navigation in your app
+
+createLaead
+loginpage--->homepage-Leadsdashboard--->leads-->createlead->viewlead
+Loginpage->myhomepage->logout
+
+3.Add actions/methods to each page
+
+In Login page-> Enter the user
+Enter the pwd
+Click the login
+
+-->HomePage -->clickCRMsfa
+               --->logout
+
+
+-->crmsfa--->Leads dashboard
+
+--->logout--->loginpage
+
+4.Add return statement as per the navigation of your application
+
+if the control stays in the same page-- return this;
+if the control passed to the other page-- return new classname();(as per the navigation)
+
+
+5.Create Testcase for the leads execution
+
+=======================================================================
+
+
+Executing the testcases as sequentially and parallel
+****************************************************
+For sequential execution
+ **Add static to the driver 
+ **create testng.xml file to execute from suite level
+
+In parallel Execution
+
+
+ProjectSpecficMethod          pages
+	
+brforemethod-->creating the sessionid--->passed to pages (using constructor)
+
+			     testcases
+
+Steps for parallel Execution:
+============================
+
+**Remove Static Keyword in chromedriver declaration
+**Create a public constructor all pages
+**Pass the constructor , ChromeDriver driver as parameter 
+***use this keyword to initialize the local driver to instance variable
+***and pass the driver to the testcase.
+
+To add Dataprovider
+====================
+**Add the readExcel file to your project as a separate package
+**Add the common Dataprovider method to projectspecific maethod
+**Pass the parameter to the required pages and the testcase
+**Create a method in the testccase to attach your excel file and add the annotation dataProvider to your @Test
+			      
+=================================================================================================================================================================
+
+Integrating Cucumber with POM
+
+1.Create a feature File
+
+2.Include the feature step to the pages method
+
+3.Create runner class and glue the feature with the pages
+
+===============================================================================================================
+As the constructor call is not allowed in cucumber 
+
+To acheive llel execution without constructor in cucumber
+
+Add ThreadLocalclass in Project specific method
+
+
+private static final ThreadLocal<RemoteWebDriver> tldriver=new ThreadLocal<RemoteWebDriver>();
+	
+	public void setDriver() {
+		tldriver.set(new ChromeDriver());
+	}
+	
+	public RemoteWebDriver getDriver() {
+		return tldriver.get();
+	}
+
+add setDriver() method to @BeforeMethod
+
+Remove the constructor from all the pages
+
+Change the driver to getDriver() in all the actions in the pages 
+==========================================================================
+Extent Report
+======
+
+<dependency>
+     <groupId>com.aventstack</groupId>
+     <artifactId>extentreports</artifactId>
+     <version>3.1.5</version>
+</dependency>
+
+ExtentHtmlReporter
+Extentreports
+ExtentTest
+MediaEntityBuilder
+
+
+@BeforeSuite--->to start the report
+ @BeforeTest->desc testdetails
+  @BeforeClass-->details will be added
+   @dp
+     @BeforeMethod
+          @Test
+
+
+Steps --Attaching Extent Report to the Project
+=============================================
+
+1.Create the method to start the report-->startReport() and annotation is like @Before Suite
+
+Use ExtentHtmlReporter as public static
+ExtentReports as public static
+
+2.Create the method to close the report-->endReport() and annotatioon-->@AfterSuite
+
+3.Create method to add the test details in ProjectSpecificmethod and the annotate with @BeforeClass
+
+
+ assigning author
+assigning Category 
+assigning test name and testdesc
+
+all the variables should be declared globally
+
+
+Add all the variables to the testcase along with the excel file-->(Create method in testcase(@test) in that add the testdatails) and annotate with @BeforeTest
+
+4.Create the method to get the status and screenshot of the testcases in projectSpecificMethod
+
+reportStep-->get the status of tc as pass/fail along with MediaEntityBuilder(to get the screenshot) 
+takesnap-->driver.getScreenshot
+
+
+5.call the reportStep method to all the actions and verification steps in the pages.(Using try catch)
+
+
+
+
+
+
+
+
+
+Framework description
+
+
+

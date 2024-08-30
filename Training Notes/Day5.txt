@@ -1,0 +1,61 @@
+Remaining Topics
+===============
+Action class
+WebTable
+=========================
+Screenshot 
+chromeoptions
+=======================
+
+Wait 
+----
+Implicit Wait
+     -applies to all element which you are going to locate
+     -findElement and findElements
+
+       driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+
+ExplicitWait
+   -Wait applied to the particular element
+ WebDriverWait wait =new WebDriverWait(driver,Duration.ofseconds(10));
+
+ -to dynamic element --
+
+FluentWait
+
+wait=new FluentWait(driver).withTimeOut(Duration.ofSeconds).pollingEvery(Duration.ofSeconds)
+
+===========================================================
+scrollbar
+click and send keys..
+
+send keys->driver.executeScript("document.getElementById('username').value='demosalesManager';");
+driver.executeScript("arguments[0].click();", findElement);
+
+
+Encapsulation
+=============
+hiding details
+-binding variables and methods into to a single entity.
+-private variable methods
+
+
+-highlyprotecteddata
+
+
+
+to access the prvate variable,
+ two methods
+ getter-read the data
+ setter-set the value
+
+
+
+
+
+
+Selenium New Feature
+Relative locators
+==============
+
+

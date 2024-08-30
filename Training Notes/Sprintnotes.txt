@@ -1,0 +1,20 @@
+Req-->dev-->test-->UATtesting
+====================
+Sprint-->short devlopment cycle-->helps to get frequent feedback from client
+timeboxed dev cycle-->1 to 3 weeks-->get approval from client for the developed piece of code that meets our their req
+Plan-produce- inspect and adopt-->sprint cycle
+plan includes team size, working hours, and fix the goal for the sprint
+produce-->develop and test
+insect-->by client
+adopt..
+
+
+InSprint Automation:
+===============
+
+#Dummy page--designed using WireFrame --just to show the web page elements
+
+n-1-automation strategy
+first manual testing-->once accepted in the next sprint ..automation will be done
+
+
